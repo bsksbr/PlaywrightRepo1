@@ -49,7 +49,7 @@ public class DropdownExample {
 
             // Print the dropdown values
             System.out.println("Dropdown Values : " + dropdownValues.size());
-//            dropdownValues.forEach(System.out::println);
+//            dropdownValues.forEach(System.out::println); // Using for each
         }
     }
 }

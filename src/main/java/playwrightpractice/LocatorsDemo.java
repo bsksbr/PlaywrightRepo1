@@ -89,7 +89,7 @@ public class LocatorsDemo {
 		optionsTestList.forEach(ele -> System.out.print(ele));
 						
 //		Iterating the options
-		System.out.print(countryOptionsLoc.nth(5).textContent());
+		System.out.print("5th Element : "+countryOptionsLoc.nth(5).textContent());
 //		for (int i = 0; i < countryOptionsLoc.count(); i++) {
 //			System.out.print(countryOptionsLoc.nth(i).textContent());
 //		}
