@@ -28,18 +28,30 @@ public class LocatorsROL {
 		System.out.println("Page title ---- After AltText Locator - Playwright Logo image clicked  :: "+page.title());
 		
 //		--------Locate element by 'title' text
-		page.navigate("https://www.orangehrm.com/");
+		page.navigate("https://practicesoftwaretesting.com/");
 		
-		Locator titleLocator= page.getByTitle("Human Resources Management Software | OrangeHRM");
+		Locator titleLocator= page.getByTitle("Practice Software Testing - Toolshop");
 		
-		System.out.println("Count : "+titleLocator.textContent());
 		if (titleLocator.isVisible()) {
-            System.out.println("Title Locator Content: " + titleLocator.textContent());
+			System.out.println("Element with getByTitle Found");
+			
+            System.out.println("Title Locator toString: " + titleLocator.toString());
+            titleLocator.click();
+            System.out.println("Title Locator got clicked successfully " );
         } else {
             System.out.println("Element with specified title not found.");
             System.out.println("titleLocator.count() : "+ titleLocator.count());
     		System.out.println("Page Title   :>>>>> "+page.title());
         }
+//		-------Locate by label -----------------------------
+		page.navigate("https://practicesoftwaretesting.com/auth/login");
+		page.getByLabel("Email address *").fill("example@mail.com");
+		System.out.println("getByLabel :::  - Entered Eamil Address");
+		
+//		-------- Locate by Placeholder ---------------------
+		page.getByPlaceholder("Your password").fill("mypassword");
+		System.out.println("getByPlaceholder :::  - Entered Placeholder");
+		
 		
 	}
 
