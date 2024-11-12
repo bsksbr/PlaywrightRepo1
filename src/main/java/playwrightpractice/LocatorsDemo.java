@@ -69,7 +69,7 @@ public class LocatorsDemo {
 //		Multiple Elements:
 		
 		Locator countryOptionsLoc = page.locator("select#Form_getForm_Country option");
-		page.waitForTimeout(2000);
+		page.waitForTimeout(1000);
 
 //		System.out.println("Country Option Count ============: "+ countryOptionsLoc.allInnerTexts());
 //		System.out.println("countryOptionsLoc.all().size ++ = "+ countryOptionsLoc.all().size());
