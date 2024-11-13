@@ -46,11 +46,11 @@ public class LocatorsROL {
 //		-------Locate by label -----------------------------
 		page.navigate("https://practicesoftwaretesting.com/auth/login");
 		page.getByLabel("Email address *").fill("example@mail.com");
-		System.out.println("getByLabel :::  - Entered Eamil Address");
+		System.out.println("getByLabel :::  - Entered Eamil Address element which have Label attributes");
 		
 //		-------- Locate by Placeholder ---------------------
 		page.getByPlaceholder("Your password").fill("mypassword");
-		System.out.println("getByPlaceholder :::  - Entered Placeholder");
+		System.out.println("getByPlaceholder :::  - Entered passwrod  in the text element which Placeholder attributes");
 		
 		
 	}
