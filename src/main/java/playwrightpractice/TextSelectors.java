@@ -72,7 +72,8 @@ public class TextSelectors {
 //		Find button element using text
 		
 		page.navigate("https://practicesoftwaretesting.com/");
-	    page.locator("[data-test=\"search-query\"]").fill("Hammer");
+//	    page.locator("[data-test=\"search-query\"]").fill("Hammer");
+	    page.locator("input:has-text('Search')").fill("Hammer");
 		page.locator("button:has-text('Search')").click();
 		
 		
