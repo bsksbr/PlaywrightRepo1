@@ -8,7 +8,9 @@ import com.microsoft.playwright.FrameLocator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
-public class FrameHandlingExample2 {
+//Using frameLocator twice to traverse when we are handling nested frames on css
+
+public class FrameHandlingExampleCSS {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
